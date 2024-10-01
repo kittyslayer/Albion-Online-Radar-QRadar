@@ -96,7 +96,7 @@ const getActiveIP = () => {
 
 
 var c = new Cap();
-var device = Cap.findDevice(getActiveIP());
+var device = Cap.findDevice(192.168.1.228());
 const filter = 'udp and (dst port 5056 or src port 5056)';
 var bufSize =  4096;
 var buffer = Buffer.alloc(4096);
